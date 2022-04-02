@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+
+    <title>Light and Sound Memory Game</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <!-- this is the start of content -->
+    <h1>Light and Sound Memory Game</h1>
+    <p>Welcome to the game! Repeat back the pattern by pressing the buttons.</p>
+    <p id="liveCount"></p>
+    <p id="timer"></p>
+    <button id="startBtn" onclick="startGame()">Start</button>
+    <button id="stopBtn" class="hidden" onclick="stopGame()">Stop</button>
+    <div id="gameButtonArea">
+      <button id="button1" onclick="guess(1)" onmousedown="startTone(1)" onmouseup="stopTone()" 
+>    
+</button>
+      <button id="button2" onclick="guess(2)" onmousedown="startTone(2)" onmouseup="stopTone()" 
+></button>
+      <button id="button3" onclick="guess(3)" onmousedown="startTone(3)" onmouseup="stopTone()" 
+></button>
+      <button id="button4" onclick="guess(4)" onmousedown="startTone(4)" onmouseup="stopTone()" 
+></button>
+      <button id="button5" onclick="guess(5)" onmousedown="startTone(5)" onmouseup="stopTone()" 
+></button>
+      <button id="button6" onclick="guess(6)" onmousedown="startTone(6)" onmouseup="stopTone()" 
+></button>
+    </div>
+    <img id="1" class="hidden" src="https://cdn.glitch.global/658cae36-d8ec-4509-8135-2efca3ab873a/1.png?v=1648769561482">
+    <img id="2" class="hidden" src="https://cdn.glitch.global/658cae36-d8ec-4509-8135-2efca3ab873a/2.png?v=1648770015151">
+    <img id="3" class="hidden" src="https://cdn.glitch.global/658cae36-d8ec-4509-8135-2efca3ab873a/3.png?v=1648770645270">
+    <img id="4" class="hidden" src="https://cdn.glitch.global/658cae36-d8ec-4509-8135-2efca3ab873a/4.png?v=1648770648254">
+    <img id="5" class="hidden" src="https://cdn.glitch.global/658cae36-d8ec-4509-8135-2efca3ab873a/5_7.png?v=1648770651681">
+    <img id="6" class="hidden" src="https://cdn.glitch.global/658cae36-d8ec-4509-8135-2efca3ab873a/6.png?v=1648769784354">
+    <img id="7" class="hidden" src="https://cdn.glitch.global/658cae36-d8ec-4509-8135-2efca3ab873a/8.png?v=1648770654786">
+  </body>
+</html>
